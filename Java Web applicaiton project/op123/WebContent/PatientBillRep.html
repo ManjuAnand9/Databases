@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.submit_button {
+	color: #FFFFFF !important;
+	background: #1795FF;
+	background-size: auto;
+	border-style: none;
+	border-width: 0px;
+	border-color: #FFFFFF;
+	border-radius: 2px;
+	text-align: center;
+	font-family: 'Lato',sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	min-width: 20%;
+	padding: 2px 10px;
+	text-transform: none;
+	box-shadow: none;
+}</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="BillsReport" method="post" name="BillsReportForm">
+		<div class="form_table">
+		<a id="homepagelink" href="HomePage.html">Go to Home Page</a>&emsp;
+	
+<a id="logoutlink" href="login.html" align="right">LogOut</a>
+
+			<div id="q0" class="prescriptionfields full_width">
+				<a class="item_anchor" name="ItemAnchor0"></a>
+				<div class="segment_header" style="width: auto; text-align: center;">
+					<h1 style="font-size: 30px; padding: 20px 1em;">Get Bills for a single Visit </h1>
+				</div>
+			</div>
+			
+			<div id="VIDDIV" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Visit ID&nbsp;<b class="icon_required" style="color: #FF0000">*</b>
+					</label>
+				 <input type="text" name="VisitIDKey" class="text_field"  value="" required  />
+			</div>
+			<br><br><br>
+			<div>
+					<button type="submit" class ="submit_button" name="task" value="update">Get all Bills</button>
+				</div>
+			</div>
+			</form>
+			
+			
+		
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="/include/form/form8.js?9919831125121"></script>
+
+<form action="VisitServlet" method="post" name="Visit">
+		<div class="form_table">
+		<a id="homepagelink" href="HomePage.html">Go to Home Page</a>&emsp;
+	
+<a id="logoutlink" href="login.html" align="right">LogOut</a>
+
+			<div id="q0" class="prescriptionfields full_width">
+				<a class="item_anchor" name="ItemAnchor0"></a>
+				<div class="segment_header" style="width: auto; text-align: center;">
+					<h1 style="font-size: 30px; padding: 20px 1em;">Recording Patients Visit</h1>
+				</div>
+			</div>
+			
+			<div id="visitId" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Visit Id &nbsp;
+					</label>
+				 <input type="text" name="visitId" class="text_field" id="RESULT_TextField-1" size="23" value="" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+			</div>
+			<div id="PatientId" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">PatientId &nbsp;<b class="icon_required" style="color: #FF0000">*</b>
+					</label>
+				 <input type="text" name="PatientId" class="text_field" id="RESULT_TextField-1" size="23" value="" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+			</div>
+			<div id="DoctorId" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">DoctorId &nbsp;<b class="icon_required" style="color: #FF0000">*</b>
+					</label>
+				 <input type="text" name="doctorId" class="text_field" id="RESULT_TextField-1" size="23" value="" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+			</div>
+			<div id="facility" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Facility &nbsp;<b class="icon_required" style="color: #FF0000">*</b>
+					</label>
+				 <input type="text" name="Facility" class="text_field" id="RESULT_TextField-1" size="23" value="" required  />
+			</div>
+			
+			<!-- <div id="VisitTimeIN" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Visit Time IN &nbsp;
+					</label>
+				 <input type="datetime" name="VisitTimeIN" class="text_field" id="RESULT_TextField-1" size="23" value=""  />
+			</div>
+			<div id="VisitTimeOUT" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Visit Time OUT &nbsp;
+					</label>
+				 <input type="datetime" name="VisitTimeOUT" class="text_field" id="RESULT_TextField-1" size="23" value=""  />
+			</div>
+ -->
+			
+				<div class="columnwidth">
+					<button type="submit" class ="savebutton" name="task" value="save">Save Visit</button>
+				</div>
+				
+				<div>
+					<button type="submit" class ="updatebutton" name="task" value="update">Update Visit</button>
+				</div>
+
+		<script type="text/javascript">
+			window.onload = function() {
+			document.forms['Visit'].reset()
+			};
+			
+		</script>
+	
+
+
+
+</div>
+</form>
+</body>
+</html>
+

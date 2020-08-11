@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+ $(document).ready(function(){
+    //sends ajax get request
+    $.get( "letty", function( data ) {
+        //Do your logic with the response
+        alert("yourvalue");
+        if(data == "yourvalue"){
+            $("p").css("display", "none");
+         }
+    });
+ });
+</script>
+</head>
+<body>
+<p>jumanji</p>
+<form action="letty" method="post">
+<h1>Get patient's visits</h1>
+
+Patient ID<input type="text" name="pid" />
+		<input type="submit" value="Get visits" />
+</form>
+
+</body>
+</html>

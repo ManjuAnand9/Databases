@@ -1,0 +1,80 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="/include/form/form8.js?9919831125121"></script>
+
+<form action="billingServlet" method="post" name="billingForm">
+		<div class="form_table">
+		<a id="homepagelink" href="HomePage.html">Go to Home Page</a>&emsp;
+	
+        <a id="logoutlink" href="login.html" align="right">LogOut</a>
+
+			<div id="q0" class="prescriptionfields full_width">
+				<a class="item_anchor" name="ItemAnchor0"></a>
+				<div class="segment_header" style="width: auto; text-align: center;">
+					<h1 style="font-size: 30px; padding: 20px 1em;">Billing Information Page</h1>
+				</div>
+			</div>
+			<div id="billId" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Bill Id &nbsp;
+					</label>
+				 <input type="text" name="billId" class="text_field" id="RESULT_TextField-1" size="23" value="" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+			</div>
+			
+			<div id="visitId" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Visit Id &nbsp;<b class="icon_required" style="color: #FF0000">*</b>
+					</label>
+				 <input type="text" name="visitId" class="text_field" id="RESULT_TextField-1" size="23" value="" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+			</div>
+			<div id="totalBill" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Total Bill &nbsp;<b class="icon_required" style="color: #FF0000">*</b>
+					</label>
+				 <input type="text" name="totalBill" class="text_field" id="RESULT_TextField-1" size="23" value="" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+			</div>
+			<div id="insuranceAmount" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Insurance Amount &nbsp;<b class="icon_required" style="color: #FF0000">*</b>
+					</label>
+				 <input type="text" name="insuranceAmount" class="text_field" id="RESULT_TextField-1" size="23" value="" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+			</div>
+			<div id="balanceDue" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Balance Due&nbsp;<b class="icon_required" style="color: #FF0000">*</b>
+					</label>
+				 <input type="text" name="balanceDue" class="text_field" id="RESULT_TextField-1" size="23" value=""  required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+			</div>
+
+			<div id="billingDescription" class="q required fullwidth">
+				<a class="item_anchor" name="ItemAnchor1"></a>
+					 <label
+					class="question top_question label" for="RESULT_TextField-1">Billing Description&nbsp;<b class="icon_required" style="color: #FF0000">*</b>
+					</label>
+				 <input type="text" name="billingDescription" class="text_field" id="RESULT_TextField-1" size="23" value=""  required/>
+			</div>
+
+			
+				<div class="columnwidth">
+					<button type="submit" class ="savebutton" name="task" value="save">Save Billing</button>
+				</div>
+				
+				<div>
+					<button type="submit" class ="updatebutton" name="task" value="update">Update Billing</button>
+				</div>
+
+		<script type="text/javascript">
+			window.onload = function() {
+			document.forms['billingForm'].reset()
+			};
+			
+		</script>
+	</div>
+
+	</form>
